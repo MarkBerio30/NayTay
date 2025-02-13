@@ -1,0 +1,89 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: auto;
+    font-family: 'Great Vibes', cursive;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.valentines-day-card {
+    background: rgba(255, 255, 255, 0.9);
+    max-width: 800px;
+    text-align: center;
+}
+
+.custom-img {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.heart-button {
+    font-size: 2rem;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.video-container {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+.responsive-video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .valentines-day-card {
+        max-width: 90%;
+    }
+
+    .heart-button {
+        margin-top: 10px;
+    }
+
+    .video-container {
+        margin-top: 10px;
+    }
+
+    .custom-img {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 576px) {
+    .valentines-day-card {
+        flex-direction: column;
+    }
+
+    .col-md-6 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .video-container {
+        width: 100%;
+    }
+
+    .custom-img {
+        max-width: 120px;
+    }
+}
